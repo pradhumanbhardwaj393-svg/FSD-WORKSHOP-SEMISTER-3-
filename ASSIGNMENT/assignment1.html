@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="assignment1.css">
+</head>
+<body>
+    <div id="fsd">
+        <h1>FSD WORKSHOP QUIZ</h1>
+        <form action="">
+
+            <label for="username">ENTER YOUR NAME </label>
+            <input type="text" id="username" name="username" placeholder="e.g. rahul" required>
+
+
+            <label for="roll-number">ENTER UNIVERSITY ROLL NO.</label>
+            <input type="text" id="roll-number" name="roll_number" minlength="12" maxlength="12" placeholder="12-digit Roll No." required>
+
+    
+            <label for="branch">SELECT BRANCH NAME</label>
+            <select name="branch" id="branch" required>
+                <option value="" disabled selected>-- Select your branch --</option>
+                <option value="CSE-DS-A">CSE-DS-A</option>
+                <option value="CSE-DS-B">CSE-DS-B</option>
+                <option value="CSE-DS-C">CSE-DS-C</option>   
+            </select>
+
+            
+            <button type="submit" onclick="startingquiz()">START QUIZ</button>
+        </form>
+    </div>    
+</body>
+</html>
