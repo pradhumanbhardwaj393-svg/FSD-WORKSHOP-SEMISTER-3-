@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="assignmentpage.css">
+  <script src="assignment1.js" defer></script>
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <h1>FSD WORKSHOP QUIZ</h1>
+    <div id="timer">Time Left: 02:00</div>
+
+    <div class="question active">
+      <p>1. What does HTML stand for?</p>
+      <label><input type="radio" name="q1" value="a" /> Hyper Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="b" /> High Text Machine Language</label><br>
+      <label><input type="radio" name="q1" value="c" /> Home Tool Markup Language</label><br>
+      <label><input type="radio" name="q1" value="d" /> Hyperlink and Text Management Language</label>
+    </div>
+
+    <div class="question">
+      <p>2. Which tag is used to add a CSS file in HTML?</p>
+      <label><input type="radio" name="q2" value="a" /> &lt;script&gt;</label><br>
+      <label><input type="radio" name="q2" value="b" /> &lt;style&gt;</label><br>
+      <label><input type="radio" name="q2" value="c" /> &lt;link&gt;</label><br>
+      <label><input type="radio" name="q2" value="d" /> &lt;css&gt;</label>
+    </div>
+
+    <div class="question">
+      <p>3. Which JavaScript keyword is used to declare a variable?</p>
+      <label><input type="radio" name="q3" value="a" /> let</label><br>
+      <label><input type="radio" name="q3" value="b" /> print</label><br>
+      <label><input type="radio" name="q3" value="c" /> define</label><br>
+      <label><input type="radio" name="q3" value="d" /> const</label>
+    </div>
+
+    <div class="question">
+      <p>4. Which HTML heading tag is the smallest?</p>
+      <label><input type="radio" name="q4" value="a" /> &lt;h1&gt;</label><br>
+      <label><input type="radio" name="q4" value="b" /> &lt;h3&gt;</label><br>
+      <label><input type="radio" name="q4" value="c" /> &lt;h5&gt;</label><br>
+      <label><input type="radio" name="q4" value="d" /> &lt;h6&gt;</label>
+    </div>
+
+    <div class="question">
+      <p>5. Which CSS property changes text color?</p>
+      <label><input type="radio" name="q5" value="a" /> font-size</label><br>
+      <label><input type="radio" name="q5" value="b" /> color</label><br>
+      <label><input type="radio" name="q5" value="c" /> background</label><br>
+      <label><input type="radio" name="q5" value="d" /> margin</label>
+    </div>
+
+    <div class="buttons">
+      <button type="button" id="prevBtn">Previous</button>
+      <button type="button" id="nextBtn">Next</button>
+    </div>
+
+    <div id="result" style="display: none;">
+      <h2>Quiz Result</h2>
+      <p>Your score: <span id="score"></span></p>
+      <p id="message"></p>
+    </div>
+  </div>
+</body>
+</html>
